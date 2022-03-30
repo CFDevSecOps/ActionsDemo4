@@ -16,5 +16,5 @@ jobs:
     - name: Build & Push Image
       run: |
         echo "${{ secrets.DOCKER_ACCESS_TOKEN }}" | docker login -u "cfdevsecopsdemo" --password-
-        docker image build -t dab8106/gitaction:v1 .
-        docker push dab8106/gitaction:v1
+        docker image build -t cfdevsecopsdemo/gitaction:latest .
+        docker push cfdevsecopsdemo/gitaction:latest
